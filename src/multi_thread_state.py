@@ -1,7 +1,7 @@
 import logging
 from typing import Any, Iterable, List, Optional, Set
 
-import tqdm
+from tqdm import tqdm
 
 from constants import THREAD_SLEEP, TQDM_NCOLS
 from rate_limited_queue import RateLimitedQueue
