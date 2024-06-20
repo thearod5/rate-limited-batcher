@@ -1,8 +1,8 @@
 from typing import Callable, List, Set
 
+from child_thread import ChildThread
 from constants import THREAD_SLEEP
-from threading.child_thread import ChildThread
-from threading.multi_thread_state import MultiThreadState
+from multi_thread_state import MultiThreadState
 
 
 class ThreadUtil:

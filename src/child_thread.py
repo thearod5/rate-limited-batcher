@@ -1,10 +1,10 @@
 import logging
+import threading
 import time
 from typing import Any, Callable
 
-import threading
+from multi_thread_state import MultiThreadState
 from src.constants import OVERLOADED_ERROR
-from threading.multi_thread_state import MultiThreadState
 
 
 class ChildThread(threading.Thread):
