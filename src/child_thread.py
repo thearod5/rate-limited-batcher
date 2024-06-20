@@ -3,8 +3,8 @@ import threading
 import time
 from typing import Any, Callable
 
+from constants import OVERLOADED_ERROR
 from multi_thread_state import MultiThreadState
-from src.constants import OVERLOADED_ERROR
 
 
 class ChildThread(threading.Thread):
