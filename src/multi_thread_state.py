@@ -3,7 +3,7 @@ from typing import Any, Iterable, List, Optional, Set
 
 from tqdm import tqdm
 
-from constants import THREAD_SLEEP, TQDM_NCOLS
+from constants import THREAD_SLEEP
 from rate_limited_queue import RateLimitedQueue
 
 
@@ -112,7 +112,7 @@ class MultiThreadState:
         Initializes the progress bar for the job.
         :return: None
         """
-        self.progress_bar = tqdm(total=len(self.item_queue), desc=self.title, ncols=TQDM_NCOLS)
+        self.progress_bar = tqdm(total=len(self.item_queue), desc=self.title)
 
     def _init_retries(self, retries: Set) -> None:
         """
